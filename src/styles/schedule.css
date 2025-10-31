@@ -1,0 +1,154 @@
+
+.schedule {
+  max-width: 871px;
+  height: auto;
+  margin-inline: auto;
+
+  display: flex; 
+  /* display: none;  */
+
+  padding: 5rem;
+  gap: 2rem;
+
+  
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border: 1px solid red;
+}
+
+/* Agendar - Titulo e subtitulo */
+.schedule-title {
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* Agendar - Data */
+.schedule-title .input {
+  
+  height: 3rem;
+
+  border: 1px solid #3e3c41;
+  padding: 0.87rem 0.75rem;
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+
+  & input {
+    width: 130px;
+
+    font-size: 1rem;
+    font-family: "Inter";
+    color: #b2afb6;
+    background-color: transparent;
+
+    /* outline: none; */
+    border: none;
+
+    &::-webkit-calendar-picker-indicator {
+    /* opacity: 0; */
+    cursor: pointer;
+    background: url(../assets/arrow.svg) center/contain;
+    }
+  }
+
+  & i{
+    margin-right: 0.5rem;
+  }
+}
+
+
+/* Periodos */
+
+.schedule-period {
+  width: 100%;
+  background-color: var(--background-tertiary);
+  border-radius: 0.5rem;
+}
+
+/* Periodos - Icone, periodo e horario */
+.schedule-period header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  border-bottom: 2px solid var(--border-divisor);
+  padding: 0.75rem 1.25rem;
+
+  & label:nth-child(1){
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+  }
+}
+
+/* Periodos - agendadamento */
+
+.schedule-period ul {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.schedule-period  li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem;
+
+  border-bottom: 0.5px solid var(--border-divisor);
+
+  & :nth-child(2){
+    display: flex;
+    gap: 4px;
+  }
+}
+
+.button {
+  border: none;
+  border-radius: .5rem;
+
+  box-shadow: 0px 0px 25px var(--content-brand);
+
+  background-color: var(--content-brand);
+  font: var(--label-large);
+  text-transform: uppercase;
+
+  padding: 0.75rem 1.5rem ;
+}
+
+@media (max-width: 1000px) {
+  .schedule{
+    width: 390px;
+    padding: 1.5rem;
+
+  }
+
+  .schedule-title {
+    flex-direction: column;
+    align-items: start;
+    gap: 0.75rem;
+  }
+
+  .schedule-period li {
+    flex-direction: column;
+    align-items: start;
+    gap: 0.3rem;
+
+  }
+
+  .schedule-period li p:nth-child(4) {
+    margin-left: auto
+  }
+
+}
