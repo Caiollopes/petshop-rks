@@ -11,107 +11,151 @@
     <title>Petshop - Rocketseat</title>
 </head>
 <body>
-  <aside class="schedule">
-    <header class="schedule-title">
-      <div>
-        <h1>Sua agenda</h1>
-        <p class="p-med">Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
-      </div>
-      <div class="input">
-        <i><img src="./src/assets/calendar.svg" alt="Calendário" /></i>
-        <input type="date" id="date" name="date" required />
-      </div>
-    </header>
-
-    <section class="schedule-period">
-      <header>
-        <label class="label-large-p" for="">
-          <img src="./src/assets/morning.svg" alt="">
-          Manhã</label>
-        <label class="label-large-s" for="">09h-12h</label>
+    <aside class="schedule">
+      <header class="schedule-title">
+        <div>
+          <h1>Sua agenda</h1>
+          <p class="p-med">Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
+        </div>
+        <div>
+          <input type="date" id="date" name="date" required />
+        </div>
       </header>
-      <ul>
-        <li>
-          <label class="label-med" for="">09:00</label>
-          <label class="label-small" for="">Thor
-            <p class="p-small">/ Fernanda Costa</p>
-          </label>
-          <p class="p-small">Vacinação</p>
-          <p class="p-small">Remover agendamento</p>
-        </li>
-        <li>
-          <label class="label-med" for="">09:00</label>
-          <label class="label-small" for="">Thor
-            <p class="p-small">/ Fernanda Costa</p>
-          </label>
-          <p class="p-small">Vacinação</p>
-          <p class="p-small">Remover agendamento</p>
-        </li>
-      </ul>
-    </section>
 
-    <section class="schedule-period">
-      <header>
-        <label class="label-large-p" for="">
-          <img src="./src/assets/aftermoon.svg" alt="">
-          Tarde</label>
-        <label class="label-large-s" for="">13h-18h</label>
-      </header>
-      <ul>
-        <li>
-          <label class="label-med" for="">09:00</label>
-          <label class="label-small teste" for="">Thor
-            <p class="p-small">/ Fernanda Costa</p>
-          </label>
-          <p class="p-small">Vacinação</p>
-          <p class="p-small">Remover agendamento</p>
-        </li>
-        <li>
-          <label class="label-med" for="">09:00</label>
-          <label class="label-small" for="">Thor
-            <p class="p-small">/ Fernanda Costa</p>
-          </label>
-          <p class="p-small">Vacinação</p>
-          <p class="p-small">Remover agendamento</p>
-        </li>
-      </ul>
-    </section>
+      <section class="schedule-period">
+        <header>
+          <label class="label-large-p" for="">
+            <img src="./src/assets/morning.svg" alt="">
+            Manhã</label>
+          <label class="label-large-s" for="">09h-12h</label>
+        </header>
+        <ul>
+          <li>
+            <label class="label-med" for="">09:00</label>
+            <label class="label-small" for="">Thor
+              <p class="p-small">/ Fernanda Costa</p>
+            </label>
+            <p class="p-small">Vacinação</p>
+            <p class="p-small">Remover agendamento</p>
+          </li>
+          <li>
+            <label class="label-med" for="">09:00</label>
+            <label class="label-small" for="">Thor
+              <p class="p-small">/ Fernanda Costa</p>
+            </label>
+            <p class="p-small">Vacinação</p>
+            <p class="p-small">Remover agendamento</p>
+          </li>
+        </ul>
+      </section>
 
-    <section class="schedule-period">
-      <header>
-        <label class="label-large-p" for="">
-          <img src="./src/assets/moon.svg" alt="">
-          Noite</label>
-        <label class="label-large-s" for="">19h-21h</label>
-      </header>
-      <ul>
-        <li>
-          <label class="label-med" for="">09:00</label>
-          <label class="label-small teste" for="">Thor
-            <p class="p-small">/ Fernanda Costa</p>
-          </label>
-          <p class="p-small">Vacinação</p>
-          <p class="p-small">Remover agendamento</p>
-        </li>
-        <li>
-          <label class="label-med" for="">09:00</label>
-          <label class="label-small" for="">Thor
-            <p class="p-small">/ Fernanda Costa</p>
-          </label>
-          <p class="p-small">Vacinação</p>
-          <p class="p-small">Remover agendamento</p>
-        </li>
-      </ul>
-    </section>
+      <section class="schedule-period">
+        <header>
+          <label class="label-large-p" for="">
+            <img src="./src/assets/aftermoon.svg" alt="">
+            Tarde</label>
+          <label class="label-large-s" for="">13h-18h</label>
+        </header>
+        <ul>
+          <li>
+            <label class="label-med" for="">09:00</label>
+            <label class="label-small teste" for="">Thor
+              <p class="p-small">/ Fernanda Costa</p>
+            </label>
+            <p class="p-small">Vacinação</p>
+            <p class="p-small">Remover agendamento</p>
+          </li>
+          <li>
+            <label class="label-med" for="">09:00</label>
+            <label class="label-small" for="">Thor
+              <p class="p-small">/ Fernanda Costa</p>
+            </label>
+            <p class="p-small">Vacinação</p>
+            <p class="p-small">Remover agendamento</p>
+          </li>
+        </ul>
+      </section>
 
-    <button type="submit" class="button">Novo agendamento</button>
+      <section class="schedule-period">
+        <header>
+          <label class="label-large-p" for="">
+            <img src="./src/assets/moon.svg" alt="">
+            Noite</label>
+          <label class="label-large-s" for="">19h-21h</label>
+        </header>
+        <ul>
+          <li>
+            <label class="label-med" for="">09:00</label>
+            <label class="label-small teste" for="">Thor
+              <p class="p-small">/ Fernanda Costa</p>
+            </label>
+            <p class="p-small">Vacinação</p>
+            <p class="p-small">Remover agendamento</p>
+          </li>
+          <li>
+            <label class="label-med" for="">09:00</label>
+            <label class="label-small" for="">Thor
+              <p class="p-small">/ Fernanda Costa</p>
+            </label>
+            <p class="p-small">Vacinação</p>
+            <p class="p-small">Remover agendamento</p>
+          </li>
+        </ul>
+      </section>
 
-    <section class="form-modal">
-      <form action="">
-        
-      </form>
-    </section>
+      <section class="modal-backdrop ">
+        <div class="form-modal">
+          <form action="">
+            <header>
+              <h1>Agende um atendimento</h1>
+              <p class="p-med">
+                Preencha os dados do cliente para realizar o agendamento:
+              </p>
+            </header>
 
-  </aside>
+            <div>
+              <label for="name">Nome do tutor</label>
+              <input type="text" id="name" name="name" placeholder="Helena Souza">
+            </div>
+
+            <div>
+              <label for="pet-name">Nome do pet</label>
+              <input type="text" id="pet-name" name="pet-name" placeholder="Cheddar">
+            </div>
+
+            <div>
+              <label for="phone">Telefone</label>
+              <input type="text" id="phone" name="phone" placeholder="(00) 0 0000-0000">
+            </div>
+
+            <div>
+              <label for="service">Descrição do serviço</label>
+              <textarea type="text" name="service" id="service" placeholder="Banho e tosa"></textarea>
+            </div>
+
+            <div class="date-hour">
+              <div>
+                <label for="date-schedule">Data</label>
+                <input type="date" id="date-schedule" name="date">           
+              </div>
+              <div>
+                <label for="hour">Hora</label>
+                <select name="hour" id="hour">
+                <option value="hour">12:00</option>
+              </select>           
+              </div>
+            </div>
+            <div>
+              <button type="submit" class="button" id="button-cancel">Cancelar</button>
+              <button type="submit" class="button" id="button-schedule">Agendar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </aside>
+    <footer>
+      <button type="submit" class="button" id="button-scheduling">Novo agendamento</button>
+    </footer>
 </body>
 </html>

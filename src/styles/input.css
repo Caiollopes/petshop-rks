@@ -1,0 +1,57 @@
+input, textarea, select {
+  appearance: none;
+  width: 100%;
+  border-radius: .5rem;
+  border: 2px solid transparent;
+  outline: 1px solid var(--border-primary);
+  background-color: transparent;
+  padding: .75rem 1rem;
+
+  color: var(--content-secondary);
+  font: var(--text);
+
+  resize: none;
+
+  &::-webkit-calendar-picker-indicator {
+    /* opacity: 0; */
+    cursor: pointer;
+    background: url(../assets/arrow.svg) center/contain;
+    }
+
+}
+
+label {
+    font: var(--label-med);
+    color: var(--content-primary);
+
+    display: flex;
+    margin-bottom: 0.6rem;
+}
+
+input[id="name"] {
+  background: url('../assets/user.svg') no-repeat 10px center / 20px 20px;
+  padding-left: 2.5rem;
+}
+
+input[id="pet-name"] {
+  background: url('../assets/pet.svg') no-repeat 10px center / 20px 20px;
+  padding-left: 2.5rem;
+}
+
+input[id="phone"] {
+  background: url('../assets/phone.svg') no-repeat 10px center / 20px 20px;
+  padding-left: 2.5rem;
+}
+
+input[id="date"],
+input[id="date-schedule"] {
+  background: url('../assets/calendar.svg') no-repeat 10px center / 20px 20px;
+  padding-left: 2.5rem;
+}
+
+select[id="hour"] {
+  background: url('../assets/clock.svg') no-repeat 10px center / 20px 20px;
+  padding-left: 2.5rem;
+}
+
+

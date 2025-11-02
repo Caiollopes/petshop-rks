@@ -34,12 +34,21 @@
     --label-med: 700 0.875rem/1.5 var(--font2);
     --label-small: 700 0.75rem/1 var(--font2);
 
+    --text: 500 1rem/1 var(--font2);
+
     /* Link */
     --link: 500 0.75rem/1 var(--font2);
 }
 
 body {
     background-color: var(--background-primary);
+    width: 100%;
+    /* height: 100vh; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1 {
