@@ -54,3 +54,25 @@ form {
     display: none;
 }
 
+.hour-unavailable {
+  opacity: 0.5;
+  color: rgb(163, 43, 43);
+}
+
+.hour-available {
+  color: rgb(36, 131, 36);
+}
+
+.hour-selected {
+    color: white;
+}
+
+select {
+    cursor: pointer;
+}
+
+select option {
+    background-color: var(--background-tertiary);
+}
+
+
