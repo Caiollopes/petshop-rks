@@ -1,6 +1,10 @@
 import dayjs from "dayjs";
 
+import { scheduleNew } from "../../services/schedules-new.js";
+import { schedulesDay } from "../schedules/load.js";
+
 const form = document.querySelector("form")
+const modal = document.getElementById("modal")
 
 const tutorName = document.getElementById("name")
 const petName = document.getElementById("pet-name")
@@ -20,7 +24,7 @@ formDate.value = inputToday // input do formulario (modal)
 // Bloqueia datas passadas para agendamento, deixando apenas do dia atual para frente.
 formDate.min = inputToday // input do formulario (modal)
 
-form.onsubmit = (event) => {
+form.onsubmit = async (event) => {
     // Previne o comportamento do formulario
     event.preventDefault()
 
@@ -45,9 +49,10 @@ form.onsubmit = (event) => {
         const when = dayjs(formDate.value).add(hour, "hour")
          
         // Gera um ID
-        const id = new Date().getTime()
+        const id = new Date().getTime().toString()
 
-        console.log({
+        // Faz o agendamento
+        scheduleNew({
             id,
             name,
             pet,
@@ -55,8 +60,16 @@ form.onsubmit = (event) => {
             service,
             when,
         });
+
         
         
+        // Recarregar os agendamentos
+        schedulesDay()
+
+        // Fechar modal
+        modal.classList.add('close')
+
+
     } catch (error) {
         alert("Nao foi possivel realizar o agendamento.")
         console.log(error);

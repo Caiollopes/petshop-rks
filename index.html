@@ -16,7 +16,7 @@
           <p class="p-med">Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
         </div>
         <div>
-          <input type="date" id="date" name="date" required />
+          <input type="date" id="date" name="date" />
         </div>
       </header>
 
@@ -27,23 +27,15 @@
             Manhã</label>
           <label class="label-large-s" for="">09h-12h</label>
         </header>
-        <ul>
-          <li>
+        <ul id="period-morning">
+          <!-- <li>
             <label class="label-med" for="">09:00</label>
             <label class="label-small" for="">Thor
               <p class="p-small">/ Fernanda Costa</p>
             </label>
             <p class="p-small">Vacinação</p>
             <p class="p-small">Remover agendamento</p>
-          </li>
-          <li>
-            <label class="label-med" for="">09:00</label>
-            <label class="label-small" for="">Thor
-              <p class="p-small">/ Fernanda Costa</p>
-            </label>
-            <p class="p-small">Vacinação</p>
-            <p class="p-small">Remover agendamento</p>
-          </li>
+          </li> -->
         </ul>
       </section>
 
@@ -54,23 +46,15 @@
             Tarde</label>
           <label class="label-large-s" for="">13h-18h</label>
         </header>
-        <ul>
-          <li>
+        <ul id="period-afternoon">
+          <!-- <li>
             <label class="label-med" for="">09:00</label>
             <label class="label-small teste" for="">Thor
               <p class="p-small">/ Fernanda Costa</p>
             </label>
             <p class="p-small">Vacinação</p>
             <p class="p-small">Remover agendamento</p>
-          </li>
-          <li>
-            <label class="label-med" for="">09:00</label>
-            <label class="label-small" for="">Thor
-              <p class="p-small">/ Fernanda Costa</p>
-            </label>
-            <p class="p-small">Vacinação</p>
-            <p class="p-small">Remover agendamento</p>
-          </li>
+          </li> -->
         </ul>
       </section>
 
@@ -81,27 +65,18 @@
             Noite</label>
           <label class="label-large-s" for="">19h-21h</label>
         </header>
-        <ul>
-          <li>
+        <ul id="period-night">
+          <!-- <li>
             <label class="label-med" for="">09:00</label>
             <label class="label-small teste" for="">Thor
               <p class="p-small">/ Fernanda Costa</p>
             </label>
             <p class="p-small">Vacinação</p>
             <p class="p-small">Remover agendamento</p>
-          </li>
-          <li>
-            <label class="label-med" for="">09:00</label>
-            <label class="label-small" for="">Thor
-              <p class="p-small">/ Fernanda Costa</p>
-            </label>
-            <p class="p-small">Vacinação</p>
-            <p class="p-small">Remover agendamento</p>
-          </li>
+          </li> -->
         </ul>
       </section>
-
-      <section id="modal" class="modal-backdrop close">
+      <section id="modal" class="modal close modal-backdrop">
         <div class="form-modal">
           <form action="">
             <header>
@@ -139,22 +114,19 @@
               <div>
                 <label for="hour">Hora</label>
                 <select name="hour" id="hour">
-                <!-- <option value="hour">12:00</option>
-                <option value="hour" class="hour hour-unavailable" disabled>13:00</option> -->
                 </select>           
               </div>
             </div>
-            <div>
-              <button type="submit" class="button" id="button-cancel">Cancelar</button>
-              <button type="submit" class="button" id="button-schedule">Agendar</button>
+            <div class="btn-schedule">
+              <button type="submit" class="btn-cancel" id="button-cancel">Cancelar</button>
+              <button type="submit" class="btn-default" id="button-schedule">Agendar</button>
             </div>
           </form>
         </div>
       </section>
-
+      <div class="footer">
+        <button type="submit" class="btn-default" id="button-scheduling">Novo agendamento</button>
+      </div>
     </aside>
-    <footer>
-      <button type="submit" class="button" id="button-scheduling">Novo agendamento</button>
-    </footer>
 </body>
 </html>

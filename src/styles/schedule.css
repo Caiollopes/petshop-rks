@@ -81,6 +81,8 @@
   }
 }
 
+
+
 @media (max-width: 1000px) {
   .schedule{
     max-width: 390px;
@@ -102,6 +104,11 @@
 
   .schedule-period li p:nth-child(4) {
     margin-left: auto
+  }
+
+  .date-hour {
+    display: flex;
+    flex-direction: column;
   }
 
 }
